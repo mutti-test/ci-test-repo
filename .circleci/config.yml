@@ -8,8 +8,8 @@ jobs:
       - checkout
 
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Echo contents of /etc/nginx/nginx.conf
+          command: cat /etc/nginx/nginx.conf
 
       - run:
           name: Print the Current Time
